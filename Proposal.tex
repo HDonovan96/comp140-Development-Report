@@ -2,15 +2,22 @@
 
 \begin{document}
 
-\title{Development Report Proposal}
+\title{Development Proposal}
+\author{Harry Donovan}
 \date{}
+
 \maketitle
 
 \section{Game Overview}
+The game will be a narrative story in which the players converse with the controller as an actual entity, rather than just using it as an input device. \\
+The story concept is that the controller has gained a level of sentience, possibly through someone becoming trapper within the controller. While I am yet to form a solid story line, I want to force the user to unplug the controller at one point, with the controller then recognising and reacting to this.
 
 \section{Controller Design}
+Given the nature of the story I wanted to cannibalise an existing device, rather than create a new controller from scratch. Several possiblities for controllers than I considered were using a stereo, a microwave, or similar device. What I settled on was an old hi-fi fm/am tuner, due to the ease of aquiring, its minimal cost, and that it would be easy to fit my circuitry within the case. It also hit all my criteria for being suitable, primarily a display port and several input options, in this case a number of buttons as well as a dial.
 
 \section{Required Electronics}
+While I origonally hoped to cannibalise almost all of the electronics from my chosen controller, excluding the microcontroller, I have realised I will likely need to purchase a new LED display. This comes after being advised by Andy Smith that using the in-built one would be likely to raise a vast number of problems and difficulties. \\
+Due to the plot beat of unplugging the controller to attempt to turn it off, I will also need an internal power supply, likely a 9V battery, as well as a fake power cable. I plan to run this plug into a fake wall socket, providing the illusion that the unit is drawing its power from the mains. The power cable will act as an open gate which will close when it is connected to the fake wall socket, allowing the arduino to detect when it is plugged in.
 
 \section{User Stories}
 
